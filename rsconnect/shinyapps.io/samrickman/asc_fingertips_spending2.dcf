@@ -1,0 +1,13 @@
+name: asc_fingertips_spending2
+title: ASC_Fingertips_Spending
+username:
+account: samrickman
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 701427
+bundleId: 1864419
+url: https://samrickman.shinyapps.io/asc_fingertips_spending2/
+when: 1549642800.9631
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: CleaningAndShapingData.R|finding3dmatches.R|getFingertipsSocialCareData.R|readme.md|Data/ASCFR Data File (with descriptions).xlsb|Data/ASCFR Data with descriptions.csv|Data/ONSPopulationData.xls
