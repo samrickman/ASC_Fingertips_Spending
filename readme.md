@@ -1,6 +1,6 @@
-## What is this?
+## What is this repo?
 
-This was my first attempt to bring together two data sources:
+This is the repo for the [Adult Social Care Spending and Fingertips Outcomes Explorer](https://samrickman.shinyapps.io/asc_fingertips_spending/), which is my first attempt to bring together two data sources:
 
 1. [Adult Social Care Activity and Finance Report]("https://digital.nhs.uk/data-and-information/publications/statistical/adult-social-care-activity-and-finance-report/2017-18").
 2. [Public Health England Fingertips Data]("https://fingertips.phe.org.uk/")
