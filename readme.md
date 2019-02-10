@@ -2,8 +2,8 @@
 
 This is the repo for the [Adult Social Care Spending and Fingertips Outcomes Explorer](https://samrickman.shinyapps.io/asc_fingertips_spending/), which is my first attempt to bring together two data sources:
 
-1. [Adult Social Care Activity and Finance Report]("https://digital.nhs.uk/data-and-information/publications/statistical/adult-social-care-activity-and-finance-report/2017-18").
-2. [Public Health England Fingertips Data]("https://fingertips.phe.org.uk/")
+1. [Adult Social Care Activity and Finance Report](https://digital.nhs.uk/data-and-information/publications/statistical/adult-social-care-activity-and-finance-report/2017-18).
+2. [Public Health England Fingertips Data](https://fingertips.phe.org.uk/)
 
 I previously created an [R Shiny Dashboard](https://samrickman.shinyapps.io/ascfr_dashboard/) look at the Adult Social Care Finance report alone which led me to three main goals:
 
@@ -61,5 +61,4 @@ The one exception is the “ASCFR Data with descriptions.csv”, which (followin
 
 This dashboard was created by Sam Rickman using R version 3.5.2 (2018-12-20) on an x86, 64 bit Linux-GNU PC. 
 
-All code is open source and can be viewed in the [Shiny Care Github Repository](https://github.com/samrickman/)
-
+All code is open source.
