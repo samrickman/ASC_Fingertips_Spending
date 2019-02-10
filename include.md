@@ -63,5 +63,5 @@ The one exception is the “ASCFR Data with descriptions.csv”, which (followin
 
 This dashboard was created by Sam Rickman using R version 3.5.2 (2018-12-20) on an x86, 64 bit Linux-GNU PC. 
 
-All code is open source and can be viewed in the [Shiny Care Github Repository](https://github.com/samrickman/ASC_Fingertips_Spending)
+All code is open source and can be viewed in the [Github Repository](https://github.com/samrickman/ASC_Fingertips_Spending)
 
