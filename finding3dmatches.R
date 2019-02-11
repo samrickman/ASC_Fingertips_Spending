@@ -1,5 +1,5 @@
-# This is the script that finds two indicators with matching values
-# Which allows them to be compared in 3d
+# This is the script that finds two indicators with matching reporting frequences
+# Which allows them to be compared over time in 3d 
 
 library(readr)
 library(dplyr)
@@ -8,7 +8,7 @@ library(reshape2)
 
 # This is how to get the indicators which have matching dates
 
-currentData <- read_rds("./Scripts/Data/ASCIndicatorsData.rds") # created in morewrangling.R
+currentData <- read_rds("./Scripts/Data/ASCIndicatorsData.rds") # # created in getFingertipsSocialCareData.R
 
 # Get a data frame just of dates
 currentData %<>% 
@@ -41,17 +41,18 @@ outputFrame$IndicatorID <- names(frameOfDates)[-1]
 # Because they all match themselves
 outputFrame$Sum <- sapply(outputFrame[-1], sum)
 
-# Then filter it to where Sum is greater than 1 then delete the sum column Then
+# Then filter it to where Sum is greater than 1,  delete the sum column, 
 # melt into a new data frame where we will easily be able to write logical tests
 # for which indicators match using dplyr::filter
 outputFrame %<>% filter(Sum>1) %>% 
         select(-Sum) %>% 
         melt(id="IndicatorID", variable.name = "Match")
 
-
+# Get a data frame of unique indicators so we can bring the indicator name back in
 uniqueIndicators <- read_rds("./Scripts/Data/uniqueIndicators.rds")
-# Also want to get the data frame of indicators that you can look at in 3d so
-# they can be listed in the shiny app on startup as 3d x axis
+
+# Now we want to get the data frame of indicators that you can look at in 3d as
+# a vector they can be listed in the shiny app on startup as 3d x axis
 outputFrame %>% select(IndicatorID) %>% distinct() %>% 
         mutate(IndicatorID=as.integer(IndicatorID)) %>% 
         left_join(uniqueIndicators, by = "IndicatorID") -> unique3dIndicators
