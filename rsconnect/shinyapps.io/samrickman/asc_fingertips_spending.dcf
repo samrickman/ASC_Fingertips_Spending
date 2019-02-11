@@ -5,9 +5,9 @@ account: samrickman
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 701395
-bundleId: 1864408
+bundleId: 1867545
 url: https://samrickman.shinyapps.io/asc_fingertips_spending/
-when: 1549642158.7824
+when: 1549831740.9101
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: appwithlocaldirectories.R|CleaningAndShapingData.R|finding3dmatches.R|getFingertipsSocialCareData.R|readme.md
+ignoredFiles: CleaningAndShapingData.R|finding3dmatches.R|getFingertipsSocialCareData.R|readme.md|Data/ASCFR Data File (with descriptions).xlsb|Data/ASCFR Data with descriptions.csv|Data/ONSPopulationData.xls
